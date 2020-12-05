@@ -1,0 +1,11 @@
+{
+  "name": "personalportfolioproject",
+  "version": "1.0.0",
+  "description": "Personal portfolio webpage of Alex Doukas.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Doukas",
+  "license": "ISC"
+}

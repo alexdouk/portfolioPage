@@ -23,6 +23,7 @@ body {
   margin: 0;
 }
 
+
 /* Navigation styling  starts here*/
 .nav{
   position: fixed;
@@ -30,7 +31,7 @@ body {
 }
 
 .nav span{
-  font-size:30px;
+  font-size:2vw;
   cursor:pointer;
   color: var(--yellow);
   position: relative;
@@ -49,14 +50,15 @@ body {
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 2vw;
   color: var(--light-grey);
   display: block;
   transition: 0.3s;
   line-height: 100%;
   font-family: 'Abril Fatface';
+  text-align: center;
 }
 
 .sidenav a:hover {
@@ -71,10 +73,6 @@ body {
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 /* Navigation styling  ends here*/
 
 
@@ -83,7 +81,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: auto;
+  width: 100%;
   min-height: 100vh;
 }
 
@@ -97,6 +95,9 @@ body {
   color: var(--yellow);
   width:40%;
 }
+
+
+
 /* Header section styling ends here */
 
 /* About section styling starts here */
@@ -234,6 +235,7 @@ details[open] > summary {
    padding-top: 50px;
 }
 
+
 @media (min-width: 768px) {
 
   details[open] > div > p {
@@ -301,7 +303,7 @@ details[open] > summary {
 }
 
 
-/* Skills section styling starts here */
+/* Contact section styling starts here */
 .contactSection{
     display: flex;
     flex-direction: column;
@@ -342,17 +344,59 @@ details[open] > summary {
   border-style:solid;
   border-width: thin;
 }
-/* Skills section styling ends here */
+/* contact section styling ends here */
 
 
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
+@media only screen and (max-width: 420px) {
+  .sidenav a {
+    font-size: 8vw;
+  }
+
+  .nav span{
+    font-size:8vw;
+  }
+
   .headerSection{
+    display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .headerSection h1{
+    align-self: center;
+    font-size: 3rem;
+    width:50%;
   }
   .headerSection img{
-    width: 30%;
-    align-self: center;
+    font-size: 3rem;
+    width:50%;
   }
+
+  .aboutSection p{
+    font-size: 1.5rem;
+    width:50%;
+  }
+  
+  .aboutSection span{
+    font-size: 2rem;
+  }
+
+  .skillsSection h1{
+    font-size: 2rem;
+    width:50%;
+  }
+  
+  .skillsSection p{
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    width:50%;
+  }
+
+  summary {
+    padding: 20px;
+    font-size: 1rem;
+
+  }
+  
 }

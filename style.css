@@ -10,6 +10,11 @@
   --sectionWidth: 50%;
 }
 
+a{
+  text-decoration: underline;
+  color: var(--whitesmoke);
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -170,12 +175,6 @@ body {
   width:50%;
 }
 
-.skillsSection p:hover{
-  background-color: var(--yellow);
-  color: var(--light-grey);
-  border-style:solid;
-  border-width: thin;
-}
 /* Skills section styling ends here */
 
 
@@ -194,6 +193,7 @@ body {
   max-width: var(--sectionWidth);
   margin: auto;
   color: var(--yellow);
+  padding-top: 5%;
 }
 
 summary {

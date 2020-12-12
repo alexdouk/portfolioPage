@@ -150,7 +150,7 @@ body {
     padding-bottom: 5%;
   }
 
-.skillsSection h1{
+.skillsSection h1, .projectsSection h1{
   font-family: 'Abril Fatface';
   align-self: center;
   font-size: 4rem;
@@ -161,14 +161,13 @@ body {
   width:50%;
 }
 
-.skillsSection p{
+.skillsSection pre{
   font-family: 'Oswald', sans-serif;
   font-weight: 200;
   align-self: center;
   font-size: 2rem;
   border-left-style: solid;
   border-left-width: thin;
-  letter-spacing: 5px;
   margin-left: 1%;
   padding-left: 1%;
   color: var(--light-grey);
@@ -195,6 +194,11 @@ body {
   color: var(--yellow);
   padding-top: 5%;
 }
+
+.projectsSection h1{
+  width: 100%;
+}
+
 
 summary {
   display: block;
@@ -324,7 +328,7 @@ details[open] > summary {
   width:50%;
 }
 
-.contactSection p{
+.contactSection pre{
   font-family: 'Oswald', sans-serif;
   font-weight: 200;
   align-self: center;
@@ -338,12 +342,11 @@ details[open] > summary {
   width:50%;
 }
 
-.contactSection p:hover{
-  background-color: var(--yellow);
+.contactSection a{
   color: var(--light-grey);
-  border-style:solid;
-  border-width: thin;
 }
+
+
 /* contact section styling ends here */
 
 
@@ -383,14 +386,20 @@ details[open] > summary {
     font-size: 2rem;
   }
 
-  .skillsSection h1{
+  .skillsSection h1 , .projectsSection h1, .contactSection h1{
     font-size: 2rem;
     width: 50vw;
   }
   
-  .skillsSection p{
-    font-size: 1.5rem;
+  .skillsSection pre{
+    font-size: 1rem;
     letter-spacing: 4px;
+    width: 50vw;
+  }
+
+  .contactSection pre{
+    font-size: 1rem;
+    letter-spacing: 2px;
     width: 50vw;
   }
 

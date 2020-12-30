@@ -1,0 +1,10 @@
+#simplify
+Web application that returns
+a short version of a long URL. 
+Created with vanilla javascript, fetch API,
+HTML, CSS and scroll Revealjs for a simple animation.
+
+#las Sillas
+Chair showcase, single page website. Created with
+React and styled with styled-components. React Hooks
+and React Router were also used.

@@ -212,6 +212,10 @@ summary {
   margin-bottom: 5%;
 }
 
+details p{
+  text-align: center;
+}
+
 details > div {
   display: flex;
   flex-wrap: wrap;
